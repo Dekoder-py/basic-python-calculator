@@ -17,7 +17,9 @@ sleep = rand.randint(3, 7)
 
 time.sleep(sleep)
 
-running = input("Would you like to perform a calculation with the Basic Python Calculator? (yes/no): ")
+running = input(
+    "Would you like to perform a calculation with the Basic Python Calculator? (yes/no): "
+)
 
 
 while running.lower() == "yes":
@@ -45,9 +47,8 @@ while running.lower() == "yes":
 
         calculation(num1=num1, operator=operator, num2=num2)
 
-        running = input("Do you want to perform another calculation? (yes/no): ")
+    running = input("Do you want to perform another calculation? (yes/no): ")
 
 if running.lower() == "no":
     print("Thank you for using the Basic Python Calculator. Goodbye!")
     time.sleep(3)
-    
